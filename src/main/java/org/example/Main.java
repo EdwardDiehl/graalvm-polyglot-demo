@@ -18,13 +18,13 @@ class Main {
         System.out.println("Fifth element of the doubled array: %s".formatted(fifthElement));
     }
 
-    private static String embeddedJavaScript =
+    private final static String embeddedJavaScript =
             """
                     (length, max) =>
                       [...new Array(length)].map(() => Math.round(Math.random() * max))
                     """;
 
-    private static String embeddedRuby =
+    private final static String embeddedRuby =
             """
                     -> (numbers) { numbers.map { |number| number * 2 } }
                     """;
